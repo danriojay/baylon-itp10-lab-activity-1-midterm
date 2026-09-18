@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.control-panel {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.control-panel h2 {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #333;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.profile-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 8px solid;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card.active {
+    border-left-color: green;
+}
+
+.profile-card.inactive {
+    border-left-color: red;
+}
+
+.profile-card h2 {
+    margin-top: 0;
+}
+
+.details-panel {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+#formMessage {
+    min-height: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+body.dark-theme {
+    background-color: #1f1f1f;
+    color: white;
+}
+
+body.dark-theme .control-panel,
+body.dark-theme .profile-card {
+    background-color: #333333;
+    color: white;
+}
+
+body.dark-theme .details-panel {
+    background-color: #444444;
+}
+
+body.dark-theme input,
+body.dark-theme select {
+    background-color: #555555;
+    color: white;
+    border-color: #777777;
+}
